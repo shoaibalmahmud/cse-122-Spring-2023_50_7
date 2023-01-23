@@ -1,19 +1,31 @@
 
 
-//codeforce problem No:4A
-//problem Name:Watermelon
+
+//codeforce problem No:71A
+//problem Name:Way Too Long Words
+
+
 
 #include<stdio.h>
-int main()
-{
+int main(){
 
-int W;
-scanf("%d",&W);
-if (W%2==0 && W>2)
-printf("YES");
-else
-    printf("NO");
+    int n,m,i;
+
+char s[100];
+
+scanf("%d",&n);
+for(i=1;i<=n;i++){
+
+scanf("%s",&s);
+int l=strlen(s);
+
+if(l>10){
+
+    printf("%c",s[0]);
+    printf("%d",l-2);
+    printf("%c\n",s[l-1]);
+
+}
+else printf("%s\n",s);}
 return 0;
-
-
 }
